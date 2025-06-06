@@ -137,6 +137,7 @@ errorBtns.forEach(btn => {
 });
 
 window.onerror = function(message, source, lineno, colno, error) {
+  alert("Global error caught!\n" + message); 
   console.log("Global error caught:");
   console.log("Message:", message);
   console.log("Source:", source);
